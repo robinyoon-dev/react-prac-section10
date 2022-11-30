@@ -7,10 +7,10 @@ const Input = (props) => {
           props.stateValid === false ? classes.invalid : ""
         }`}
       >
-        <label htmlFor={props.type}>E-Mail</label>
+        <label htmlFor={props.id}>{props.label}</label>
         <input
           type= {props.type}
-          id={props.type}
+          id={props.id}
           value={props.value}
           onChange={props.onChange}
           onBlur={props.onBlur}
